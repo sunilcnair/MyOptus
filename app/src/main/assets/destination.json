@@ -1,0 +1,29 @@
+{
+    "locations": [
+        {
+                "id": "01",
+                "name": "Blue Mountains",
+                "car": "80 min",
+                "train": "120 min",
+                "latitude":"-33.5000",
+                "longitude": "150.2500"
+        },
+        {
+                "id": "02",
+                "name": "Taronga Zoo",
+                "car": "20 min",
+                "train": "40 min",
+                "latitude":"-33.8430",
+                "longitude": "151.2419"
+        },
+ 	{
+                "id": "03",
+                "name": "Bondi Beach",
+                "car": "120 min",
+                "train": "240 min",
+                "latitude":"-33.8915",
+                "longitude": "151.2767"
+
+        }
+  ]
+}

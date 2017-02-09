@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">myOptus</string>
+    <string name="button">Scenario 1</string>
+    <string name="button1">Scenario 2</string>
+    <string name="color1">RED</string>
+    <string name="color2">BLUE</string>
+    <string name="color3">GREEN</string>
+    <string name="navigate">NAVIGATE</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scenario1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft = "1dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.com.myoptus.Scenario1Activity">
+
+    <HorizontalScrollView
+        android:id = "@+id/scrolView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="top"
+        >
+        <LinearLayout
+            android:id="@+id/thumbnails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"/>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/scrolView"
+        android:id = "@+id/layout1"
+        android:background="@color/colorAccent"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+         >
+
+        <fragment
+            android:id="@+id/titles"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            class="com.example.com.myoptus.Scenario1Activity$TitlesFragment"
+            />
+       <!-- <TextView
+            android:id="@+id/textView"
+            android:text="Fragment 1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>-->
+
+
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+       android:layout_weight="1"
+        android:id = "@+id/layout2"
+        android:background="@android:color/holo_blue_bright"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Textview 1"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:text="Textview 2"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:text="Textview 3"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/layout1"
+        android:id = "@+id/layout3"
+
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:text="Textview 1"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3"
+        android:id="@+id/layout4"
+        >
+
+        <Button
+            android:text="@string/color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:id="@+id/button"
+
+            />
+        <Button
+            android:text="@string/color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/button2"
+
+            />
+        <Button
+            android:text="@string/color3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/button3"
+
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>
